@@ -1,0 +1,15 @@
+# dependencies
+node_modules/
+
+# Python
+__pycache__/
+*.pyc
+
+# OS files
+.DS_Store
+
+# Large binaries
+*.onnx
+*.bin
+*.pt
+*.mp4
