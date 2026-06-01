@@ -1,1 +1,1 @@
-# ds5110_webgpu_project
+# DS5110 WebGPU-Based In-Browser Video Understanding
