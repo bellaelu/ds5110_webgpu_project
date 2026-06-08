@@ -1,0 +1,43 @@
+# fastvlm session log
+# generated,2026-06-08T14:19:37.222Z
+# userAgent,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+# webgpu,true
+# crossOriginIsolated,true
+# modelLoadMs,1916
+# framesProcessed,33
+# framesDropped,0
+# dropRatePct,0.0
+seq,sessionMs,mode,source,question,endToEndMs,ttftMs,totalMs,tokens,tokensPerSec,output
+1,1781,qa,file,how many planes are in the frame?,1781,1487,1695,23,110.5,"To determine the number of planes in the frame, we need to carefully observe the image and identify any objects that resemble planes"
+2,3956,qa,file,how many planes are in the frame?,1673,1366,1576,22,105.0,"To determine the number of planes in the frame, we need to carefully examine the image provided. The image shows a single"
+3,6085,qa,file,how many planes are in the frame?,1628,1327,1534,21,101.7,"To determine the number of planes in the frame, we need to carefully observe the image and identify the objects present."
+4,8202,qa,file,how many planes are in the frame?,1616,1316,1521,22,107.4,"To determine the number of planes in the frame, we need to carefully examine the image provided. The image shows a cloudy"
+5,10325,qa,file,how many planes are in the frame?,1621,1316,1527,22,104.4,"To determine the number of planes in the frame, we need to carefully examine the image provided. The image shows a cloudy"
+6,12453,qa,file,how many planes are in the frame?,1627,1328,1532,23,112.8,"To determine the number of planes in the frame, we need to carefully observe the image and count the distinct objects that resemble"
+7,14588,qa,file,how many planes are in the frame?,1634,1327,1536,21,100.4,"To determine the number of planes in the frame, we need to carefully observe the image and count each distinct plane."
+8,16707,qa,file,how many planes are in the frame?,1617,1317,1521,21,102.7,"To determine the number of planes in the frame, we need to carefully observe the image and count each distinct plane."
+9,18824,qa,file,how many planes are in the frame?,1615,1318,1521,21,103.4,"To determine the number of planes in the frame, we need to carefully observe the image and count each distinct plane."
+10,20948,qa,file,how many planes are in the frame?,1622,1321,1526,21,102.3,"To determine the number of planes in the frame, we need to carefully observe the image and count each distinct plane."
+11,23068,qa,file,how many planes are in the frame?,1618,1315,1520,21,102.1,"To determine the number of planes in the frame, we need to carefully observe the image and count each individual plane."
+12,25180,qa,file,how many planes are in the frame?,1609,1314,1516,21,103.7,"To determine the number of planes in the frame, we need to carefully observe the image and count each individual plane."
+13,27303,qa,file,how many planes are in the frame?,1622,1320,1526,21,101.9,"To determine the number of planes in the frame, we need to carefully observe the image and count each individual plane."
+14,29476,qa,file,how many planes are in the frame?,1672,1370,1577,21,101.7,"To determine the number of planes in the frame, we need to carefully observe the image and count each individual aircraft."
+15,31607,qa,file,how many planes are in the frame?,1629,1327,1535,21,101.2,"To determine the number of planes in the frame, we need to carefully observe the image and count each individual plane."
+16,33718,qa,file,how many planes are in the frame?,1610,1310,1515,21,102.4,"To determine the number of planes in the frame, we need to carefully observe the image and count each individual aircraft."
+17,35850,qa,file,how many planes are in the frame?,1629,1316,1532,21,97.4,"To determine the number of planes in the frame, we need to carefully observe the image and count each individual plane."
+18,37967,qa,file,how many planes are in the frame?,1616,1315,1518,21,103.4,"To determine the number of planes in the frame, we need to carefully observe the image and count each individual aircraft."
+19,40097,qa,file,how many planes are in the frame?,1626,1313,1529,21,97.3,"To determine the number of planes in the frame, we need to carefully observe the image and count each individual aircraft."
+20,42216,qa,file,how many planes are in the frame?,1617,1315,1521,21,102.1,"To determine the number of planes in the frame, we need to carefully observe the image and count each individual aircraft."
+21,44346,qa,file,how many planes are in the frame?,1628,1321,1528,21,101.5,"To determine the number of planes in the frame, we need to carefully observe the image and count each individual plane."
+22,46471,qa,file,how many planes are in the frame?,1624,1320,1523,21,103.3,"To determine the number of planes in the frame, we need to carefully observe the image and count each individual plane."
+23,48607,qa,file,how many planes are in the frame?,1634,1328,1532,21,103.0,"To determine the number of planes in the frame, we need to carefully observe the image and count each individual plane."
+24,50739,qa,file,how many planes are in the frame?,1628,1332,1536,21,103.0,"To determine the number of planes in the frame, we need to carefully observe the image and count each individual plane."
+25,52870,qa,file,how many planes are in the frame?,1631,1332,1537,21,102.5,"To determine the number of planes in the frame, we need to carefully observe the image and count each individual aircraft."
+26,54998,qa,file,how many planes are in the frame?,1626,1328,1531,21,103.7,"To determine the number of planes in the frame, we need to carefully observe the image and count each individual aircraft."
+27,57125,qa,file,how many planes are in the frame?,1626,1328,1533,21,102.3,"To determine the number of planes in the frame, we need to carefully observe the image and count each individual aircraft."
+28,59257,qa,file,how many planes are in the frame?,1630,1333,1537,21,102.6,"To determine the number of planes in the frame, we need to carefully observe the image and count each individual aircraft."
+29,61395,qa,file,how many planes are in the frame?,1636,1337,1543,21,101.5,"To determine the number of planes in the frame, we need to carefully observe the image and count each individual aircraft."
+30,63385,qa,file,how many planes are in the frame?,1488,1330,1395,7,108.2,There are nine planes in the frame.
+31,65511,qa,file,how many planes are in the frame?,1624,1326,1530,21,103.0,"To determine the number of planes in the frame, we need to carefully observe the image and count each individual aircraft."
+32,67648,qa,file,how many planes are in the frame?,1635,1333,1540,21,101.5,"To determine the number of planes in the frame, we need to carefully observe the image and count each individual aircraft."
+33,69782,qa,file,how many planes are in the frame?,1632,1332,1536,21,102.8,"To determine the number of planes in the frame, we need to carefully observe the image and count each individual aircraft."

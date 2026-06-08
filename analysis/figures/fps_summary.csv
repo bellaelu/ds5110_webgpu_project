@@ -1,0 +1,4 @@
+file,mode,frames,duration_s,effective_fps,drop_rate_pct
+fastvlm-qa-2026-06-08T14-19-37-223Z.csv,qa,33,68.0,0.49,0.0
+fastvlm-event-2026-06-08T14-21-00-855Z.csv,event,32,67.1,0.48,0.0
+fastvlm-caption-2026-06-08T14-17-58-931Z.csv,caption,32,69.4,0.46,0.0

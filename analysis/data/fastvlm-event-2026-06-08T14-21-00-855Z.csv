@@ -1,0 +1,44 @@
+# fastvlm session log
+# generated,2026-06-08T14:21:00.855Z
+# userAgent,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+# webgpu,true
+# crossOriginIsolated,true
+# modelLoadMs,1916
+# framesProcessed,32
+# framesDropped,0
+# dropRatePct,0.0
+seq,sessionMs,mode,source,question,endToEndMs,ttftMs,totalMs,tokens,tokensPerSec,output
+1,1751,event,file,,1750,1447,1657,22,104.9,"To determine if any of these events is happening, we need to analyze the image provided. The image shows a kite flying"
+2,3958,event,file,,1705,1398,1609,19,89.8,"To determine if any of these happen, we need to analyze the image and the context provided.
+
+1. **Observation"
+3,5947,event,file,,1488,1397,1397,1,9090.9,none
+4,8145,event,file,,1696,1393,1604,22,104.3,"To determine if any of these events is happening, we need to analyze the image provided. The image shows a person flying"
+5,10347,event,file,,1701,1397,1618,22,99.7,"To determine if any of these actions are happening, we need to analyze the image provided. The image shows a person flying"
+6,12367,event,file,,1518,1451,1451,1,7692.3,none
+7,14750,event,file,,1557,1412,1412,1,5263.2,none
+8,17733,event,file,,1540,1401,1401,1,8000.0,none
+9,20788,event,file,,1594,1454,1454,1,8695.7,none
+10,22784,event,file,,1494,1395,1396,1,8000.0,none
+11,24788,event,file,,1503,1409,1409,1,9523.8,none
+12,26779,event,file,,1490,1392,1392,1,9523.8,none
+13,28766,event,file,,1484,1395,1395,1,8333.3,none
+14,30753,event,file,,1486,1396,1396,1,10000.0,none
+15,32744,event,file,,1490,1396,1396,1,5555.6,none
+16,34949,event,file,,1704,1400,1608,22,105.7,"The image depicts a group of fighter jets performing a formation flyby, which is a common practice in air shows or military"
+17,37161,event,file,,1709,1405,1611,22,106.4,"The image depicts a group of airplanes performing a formation in the sky, releasing colored smoke trails. This is a common sight"
+18,39377,event,file,,1715,1409,1618,22,105.1,"The image depicts a group of airplanes performing a formation flyby, which is a common sight during air shows or military demonstrations"
+19,41614,event,file,,1735,1428,1640,22,103.7,"The image depicts a group of four airplanes performing a formation in the sky. The planes are flying in a coordinated pattern,"
+20,43671,event,file,,1554,1461,1462,1,9090.9,none
+21,45897,event,file,,1725,1415,1624,22,105.3,"The image depicts a group of four jets flying in formation, leaving a trail of colored smoke. The smoke trails are red"
+22,48107,event,file,,1708,1417,1630,22,103.5,"The image depicts a group of airplanes performing a formation flyby, which is a common sight during air shows or military demonstrations"
+23,50346,event,file,,1737,1427,1639,20,94.4,"The image depicts a group of four airplanes flying in formation, leaving trails of red, white, and blue smoke. This"
+24,52583,event,file,,1735,1430,1639,22,105.0,"The image depicts a group of four jets flying in formation, leaving red and blue smoke trails. There is no visible person"
+25,54808,event,file,,1724,1421,1630,22,105.3,"To determine if any of these actions are happening, we need to analyze the image provided. The image shows a group of"
+26,56828,event,file,,1517,1423,1424,1,7692.3,none
+27,58839,event,file,,1510,1416,1416,1,7692.3,none
+28,60849,event,file,,1507,1413,1413,1,7692.3,none
+29,62862,event,file,,1511,1416,1416,1,10000.0,none
+30,64871,event,file,,1507,1414,1414,1,8333.3,none
+31,66882,event,file,,1510,1415,1415,1,10000.0,none
+32,68893,event,file,,1510,1416,1416,1,8695.7,none

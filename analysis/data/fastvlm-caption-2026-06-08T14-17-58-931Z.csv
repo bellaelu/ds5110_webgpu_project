@@ -1,0 +1,42 @@
+# fastvlm session log
+# generated,2026-06-08T14:17:58.925Z
+# userAgent,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+# webgpu,true
+# crossOriginIsolated,true
+# modelLoadMs,1916
+# framesProcessed,32
+# framesDropped,0
+# dropRatePct,0.0
+seq,sessionMs,mode,source,question,endToEndMs,ttftMs,totalMs,tokens,tokensPerSec,output
+1,1700,caption,file,,1699,1341,1616,27,98.1,"The image captures a vibrant kite soaring high in the sky, its red and blue streamers creating a striking contrast against the backdrop of a cloudy sky."
+2,3909,caption,file,,1707,1327,1607,28,100.0,"The image captures a vibrant kite soaring high in the sky, its long tail streaming behind it, set against a backdrop of a cloudy sky and distant trees."
+3,6137,caption,file,,1726,1321,1631,31,99.9,"The image captures a jet airplane performing a loop maneuver in the sky, leaving a trail of red and blue smoke, with a backdrop of a cloudy sky and distant trees."
+4,8341,caption,file,,1703,1319,1608,28,96.7,"The image captures a jet flying through a cloudy sky, with its trail of smoke or vapor trailing behind it, creating a dynamic and somewhat ethereal visual effect."
+5,10529,caption,file,,1686,1320,1590,25,92.7,"The image captures a red and white airplane flying through a cloudy sky, with the aircraft's trail visible against the backdrop of the overcast weather."
+6,12741,caption,file,,1711,1314,1612,28,94.1,"The image captures a formation of planes flying in a tight, coordinated pattern, leaving trails of red and white smoke in the sky, creating a visually striking display."
+7,14974,caption,file,,1732,1309,1636,32,97.9,"The image captures a vibrant display of red and blue smoke trails, creating a striking visual effect against a backdrop of a cloudy sky, with a distant hill visible at the bottom."
+8,17402,caption,file,,1923,1417,1827,35,85.3,"The image captures a formation of planes flying in a V-shape, leaving trails of smoke in the sky, with one plane positioned at the front and the others following behind, creating a visually striking display"
+9,19901,caption,file,,1996,1618,1901,26,91.7,"The image captures a formation of aircraft flying in a diagonal line, leaving trails of smoke behind them, set against a backdrop of a cloudy sky."
+10,22112,caption,file,,1709,1353,1605,25,99.2,"The image captures a formation of aircraft flying in a diagonal line, leaving a trail of smoke, set against a backdrop of a cloudy sky."
+11,24310,caption,file,,1697,1337,1600,26,98.6,"The image captures a formation of planes flying in a diagonal line, leaving trails of smoke behind them, set against a backdrop of a cloudy sky."
+12,26463,caption,file,,1650,1320,1553,23,98.5,"The image captures a formation of planes flying in a diagonal line, leaving trails of red and blue smoke against a cloudy sky."
+13,28638,caption,file,,1674,1319,1573,25,98.1,"The image captures a formation of planes flying in a diagonal line, leaving trails of red and white smoke against a backdrop of gray clouds."
+14,30817,caption,file,,1676,1318,1588,27,100.0,"The image captures a formation of planes flying in a diagonal line, leaving trails of red and blue smoke, set against a backdrop of a cloudy sky."
+15,32993,caption,file,,1675,1316,1579,27,102.6,"The image captures a formation of four planes flying in a diagonal line, leaving trails of red and white smoke against a backdrop of a cloudy sky."
+16,35192,caption,file,,1696,1317,1599,28,99.6,"The image captures a formation of four fighter jets flying in a diamond pattern, leaving red and white smoke trails in the sky, creating a visually striking display."
+17,37395,caption,file,,1702,1321,1602,28,99.8,"The image captures a formation of six airplanes flying in a diamond pattern, leaving trails of red and white smoke in the sky, creating a visually striking display."
+18,39600,caption,file,,1703,1320,1600,28,99.8,"The image captures a formation of six airplanes flying in a diamond pattern, leaving trails of red and white smoke in the sky, creating a visually striking display."
+19,41774,caption,file,,1672,1320,1582,27,103.1,"The image captures a formation of four airplanes flying in a diamond pattern, leaving trails of red and blue smoke against a backdrop of a cloudy sky."
+20,43968,caption,file,,1692,1318,1590,27,99.5,"The image captures a formation of nine planes flying in a diamond pattern, leaving trails of red and white smoke, against a backdrop of a cloudy sky."
+21,46254,caption,file,,1784,1323,1679,36,101.1,"The image captures a dynamic aerial display featuring nine black jets, each leaving a distinct trail of smoke in vibrant hues of red, white, and blue, creating a visually striking pattern against the backdrop of a"
+22,48537,caption,file,,1781,1322,1678,36,101.2,"The image captures a spectacular aerial display featuring nine jets flying in a tight formation, leaving vibrant trails of red, white, and blue smoke in their wake, creating a visually stunning spectacle against a backdrop of"
+23,50729,caption,file,,1690,1322,1586,27,102.4,"The image captures a formation of four airplanes flying in a diamond pattern, leaving trails of red and blue smoke against a backdrop of a cloudy sky."
+24,52960,caption,file,,1730,1335,1634,30,100.3,"The image captures a formation of nine black jets flying in a diagonal line, leaving red and blue smoke trails behind them, set against a backdrop of a cloudy sky."
+25,55221,caption,file,,1758,1390,1662,26,95.4,"The image captures a formation of six fighter jets flying in a diamond pattern, leaving trails of smoke in the sky, with the sky appearing overcast."
+26,57435,caption,file,,1713,1343,1615,27,99.1,"The image captures a formation of nine fighter jets flying in a diagonal line, leaving trails of smoke behind them, against a backdrop of a cloudy sky."
+27,59709,caption,file,,1772,1322,1677,36,101.4,"The image captures a formation of nine fighter jets flying in a V-shape, with the lead jet positioned at the front and the last jet at the back, all set against a backdrop of a cloudy"
+28,62000,caption,file,,1789,1337,1693,36,101.3,"The image captures a formation of nine fighter jets flying in a V-shape, with the lead jet positioned at the front and the last jet at the back, all set against a backdrop of a cloudy"
+29,64280,caption,file,,1778,1322,1681,36,100.2,"The image captures a formation of six fighter jets flying in a V-shape, with the lead jet positioned at the front and the last jet at the back, all set against a backdrop of a cloudy"
+30,66554,caption,file,,1772,1321,1676,35,98.8,"The image captures a formation of nine fighter jets flying in a V-shape, with the lead jet positioned at the front and the last jet at the back, against a backdrop of a cloudy sky."
+31,68814,caption,file,,1759,1319,1677,35,97.6,"The image captures a formation of six fighter jets flying in a V-shape, with the lead jet positioned at the front and the last jet at the back, against a backdrop of a cloudy sky."
+32,71065,caption,file,,1751,1364,1651,27,93.8,"The image captures a person parachuting through the sky, leaving a trail of red and blue smoke, with a backdrop of a cloudy sky and distant trees."
