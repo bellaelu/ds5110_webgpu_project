@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FastVLM · in-browser video understanding</title>
+    <style>
+      :root {
+        --bg: #0b0f14;
+        --panel: #121925;
+        --panel-2: #0e141d;
+        --ink: #e6edf3;
+        --muted: #7d8aa0;
+        --line: #1e2a3a;
+        --accent: #5eead4;
+        --accent-2: #f9a8d4;
+        --warn: #fbbf24;
+        --mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+        --sans: "Space Grotesk", system-ui, sans-serif;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: var(--sans);
+        background:
+          radial-gradient(1200px 600px at 80% -10%, #14202e 0, transparent 60%),
+          radial-gradient(900px 500px at -10% 110%, #1a1426 0, transparent 55%),
+          var(--bg);
+        color: var(--ink);
+        min-height: 100vh;
+      }
+      header {
+        padding: 28px 32px 12px;
+        border-bottom: 1px solid var(--line);
+      }
+      header h1 {
+        margin: 0;
+        font-size: 22px;
+        letter-spacing: -0.02em;
+        font-weight: 600;
+      }
+      header h1 b { color: var(--accent); font-weight: 600; }
+      header p { margin: 6px 0 0; color: var(--muted); font-size: 13px; }
+      .wrap {
+        display: grid;
+        grid-template-columns: 1.4fr 1fr;
+        gap: 20px;
+        padding: 22px 32px 40px;
+        max-width: 1200px;
+      }
+      @media (max-width: 860px) { .wrap { grid-template-columns: 1fr; } }
+      .card {
+        background: linear-gradient(180deg, var(--panel), var(--panel-2));
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        padding: 18px;
+      }
+      .stage { position: relative; }
+      video {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        background: #05070a;
+        border-radius: 10px;
+        object-fit: contain;
+        border: 1px solid var(--line);
+      }
+      .caption {
+        margin-top: 12px;
+        min-height: 48px;
+        font-family: var(--mono);
+        font-size: 14px;
+        line-height: 1.5;
+        color: var(--accent);
+        background: #05070a;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 12px;
+        white-space: pre-wrap;
+      }
+      .controls { display: grid; gap: 12px; }
+      .row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+      label { font-size: 12px; color: var(--muted); display: block; margin-bottom: 4px; }
+      select, input[type="text"], input[type="number"], input[type="file"] {
+        background: #05070a;
+        border: 1px solid var(--line);
+        color: var(--ink);
+        border-radius: 8px;
+        padding: 8px 10px;
+        font-family: var(--sans);
+        font-size: 13px;
+      }
+      .field { flex: 1; min-width: 130px; }
+      button {
+        font-family: var(--sans);
+        font-weight: 600;
+        font-size: 14px;
+        border: none;
+        border-radius: 9px;
+        padding: 10px 18px;
+        cursor: pointer;
+        transition: transform 0.08s ease, opacity 0.2s;
+      }
+      button:active { transform: translateY(1px); }
+      button:disabled { opacity: 0.4; cursor: not-allowed; }
+      #start { background: var(--accent); color: #04201c; }
+      #stop { background: #2a1620; color: var(--accent-2); border: 1px solid #3a2030; }
+      .status {
+        font-family: var(--mono);
+        font-size: 12px;
+        color: var(--warn);
+        margin-top: 4px;
+        min-height: 16px;
+      }
+      .metrics { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+      .metric {
+        background: #05070a;
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        padding: 12px 14px;
+      }
+      .metric .k { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
+      .metric .v { font-family: var(--mono); font-size: 22px; margin-top: 4px; }
+      .metric .u { font-size: 12px; color: var(--muted); }
+      .hint { font-size: 12px; color: var(--muted); line-height: 1.5; }
+      .toggle { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--ink); }
+      h3 { margin: 0 0 12px; font-size: 14px; letter-spacing: -0.01em; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>FastVLM · <b>in-browser</b> video understanding</h1>
+      <p>Apple FastVLM-0.5B running locally via Transformers.js + WebGPU. Frames never leave your device.</p>
+    </header>
+
+    <div class="wrap">
+      <!-- left: stage -->
+      <div class="card stage">
+        <video id="video" muted playsinline></video>
+        <div class="caption" id="caption">Model output will stream here…</div>
+        <div class="status" id="status"></div>
+      </div>
+
+      <!-- right: controls + metrics -->
+      <div class="card">
+        <div class="controls">
+          <div class="row">
+            <div class="field">
+              <label>Source</label>
+              <select id="source">
+                <option value="webcam">Webcam</option>
+                <option value="screen">Screen share</option>
+                <option value="file">Video file</option>
+              </select>
+            </div>
+            <div class="field">
+              <label>Task mode</label>
+              <select id="mode">
+                <option value="caption">Caption</option>
+                <option value="qa">Q&amp;A</option>
+                <option value="event">Event detection</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label>Question (Q&amp;A mode)</label>
+            <input id="question" type="text" placeholder="e.g. How many people are visible?" />
+          </div>
+
+          <div class="field">
+            <label>Video file (file source)</label>
+            <input id="file" type="file" accept="video/*" />
+          </div>
+
+          <div class="row">
+            <div class="field">
+              <label>Sample interval (ms)</label>
+              <input id="interval" type="number" value="500" min="100" step="100" />
+            </div>
+            <label class="toggle" style="align-self:flex-end;padding-bottom:8px">
+              <input id="adaptive" type="checkbox" /> adaptive (as fast as model allows)
+            </label>
+          </div>
+
+          <div class="row">
+            <button id="start" disabled>Start</button>
+            <button id="stop" disabled>Stop</button>
+          </div>
+        </div>
+
+        <hr style="border:none;border-top:1px solid var(--line);margin:18px 0" />
+
+        <h3>Live metrics</h3>
+        <div class="metrics">
+          <div class="metric"><div class="k">Model load</div><div class="v"><span id="m-load">—</span><span class="u"> ms</span></div></div>
+          <div class="metric"><div class="k">Time to first token</div><div class="v"><span id="m-ttft">—</span><span class="u"> ms</span></div></div>
+          <div class="metric"><div class="k">Total / frame</div><div class="v"><span id="m-total">—</span><span class="u"> ms</span></div></div>
+          <div class="metric"><div class="k">Tokens / sec</div><div class="v"><span id="m-tps">—</span></div></div>
+          <div class="metric"><div class="k">Effective FPS</div><div class="v"><span id="m-fps">—</span></div></div>
+          <div class="metric"><div class="k">Drop rate</div><div class="v"><span id="m-drop">0%</span></div></div>
+          <div class="metric" style="grid-column:1 / -1"><div class="k">JS memory (cross-origin isolated)</div><div class="v"><span id="m-mem">—</span><span class="u"> MB</span></div></div>
+        </div>
+
+        <hr style="border:none;border-top:1px solid var(--line);margin:18px 0" />
+
+        <h3>Session log</h3>
+        <p class="hint" style="margin-top:0">
+          Every processed frame is recorded. Run your video end to end, then
+          download the CSV for analysis. Logging resets each time you click Start.
+        </p>
+        <div class="row" style="margin-top:10px;align-items:center">
+          <button id="download" disabled style="background:var(--accent-2);color:#2a0a1c">Download CSV</button>
+          <button id="clear" style="background:#10161f;color:var(--muted);border:1px solid var(--line)">Clear log</button>
+          <span class="hint">rows logged: <b id="log-count" style="color:var(--ink)">0</b></span>
+        </div>
+
+        <p class="hint" style="margin-top:14px">
+          First inference includes warm-up (shader compile) and is slower — exclude it from results.
+          For rigorous fixed-frame numbers run the harness in <code>src/bench.js</code>. See <code>docs/03</code>.
+        </p>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
