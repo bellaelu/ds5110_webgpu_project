@@ -1,0 +1,797 @@
+{
+  "schemaVersion": 1,
+  "id": "e6319151-ab10-486c-8890-60731e885fdb",
+  "label": "Safari-Mac-Run-2",
+  "recordedAt": "2026-06-08T19:59:05.268Z",
+  "durationMs": 75039,
+  "videoFileName": "ds5110_DemoVideo.mp4",
+  "videoSourceType": "file",
+  "prompt": "Describe what you see in one sentence.",
+  "browser": {
+    "label": "Safari 26.5 · macOS",
+    "name": "Safari",
+    "version": "26.5",
+    "os": "macOS",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.5 Safari/605.1.15",
+    "webgpuSupported": true,
+    "webgpuAdapter": "WebGPU adapter (info unavailable)",
+    "memoryApiSupported": false
+  },
+  "snapshots": [
+    {
+      "elapsedMs": 5001,
+      "stats": {
+        "latency": {
+          "sampleCount": 8,
+          "skippedCount": 0,
+          "last": {
+            "frameCaptureMs": 12,
+            "preprocessMs": 87.00000000001455,
+            "generationMs": 6991,
+            "timeToFirstTokenMs": 6033.999999999985,
+            "totalMs": 7090.000000000015,
+            "timestamp": 1780948667303
+          },
+          "avgTotalMs": 7162.625000000004,
+          "avgTimeToFirstTokenMs": 5961.999999999998,
+          "minTotalMs": 6235,
+          "maxTotalMs": 8526
+        },
+        "sampling": {
+          "loopRateHz": 0.1,
+          "inferenceRateHz": 0.1,
+          "skipRateHz": 0,
+          "avgLoopPeriodMs": 6412.777777777777,
+          "configuredCaptureDelayMs": 50,
+          "totalLoopTicks": 3,
+          "totalCompleted": 3,
+          "totalSkipped": 0,
+          "skipRatio": 0,
+          "theoreticalMaxInferenceHz": 0.13961361930856347
+        },
+        "memory": {
+          "current": {
+            "supported": false,
+            "usedMB": null,
+            "totalMB": null,
+            "limitMB": null,
+            "timestamp": 1780948674217
+          },
+          "peakUsedMB": null,
+          "baselineUsedMB": null,
+          "deltaFromBaselineMB": null
+        }
+      }
+    },
+    {
+      "elapsedMs": 10002,
+      "stats": {
+        "latency": {
+          "sampleCount": 9,
+          "skippedCount": 0,
+          "last": {
+            "frameCaptureMs": 15,
+            "preprocessMs": 95,
+            "generationMs": 7762,
+            "timeToFirstTokenMs": 6635,
+            "totalMs": 7873,
+            "timestamp": 1780948675228
+          },
+          "avgTotalMs": 7241.555555555558,
+          "avgTimeToFirstTokenMs": 6036.7777777777765,
+          "minTotalMs": 6235,
+          "maxTotalMs": 8526
+        },
+        "sampling": {
+          "loopRateHz": 0.1,
+          "inferenceRateHz": 0.1,
+          "skipRateHz": 0,
+          "avgLoopPeriodMs": 6563.9,
+          "configuredCaptureDelayMs": 50,
+          "totalLoopTicks": 3,
+          "totalCompleted": 3,
+          "totalSkipped": 0,
+          "skipRatio": 0,
+          "theoreticalMaxInferenceHz": 0.13809187712891638
+        },
+        "memory": {
+          "current": {
+            "supported": false,
+            "usedMB": null,
+            "totalMB": null,
+            "limitMB": null,
+            "timestamp": 1780948678226
+          },
+          "peakUsedMB": null,
+          "baselineUsedMB": null,
+          "deltaFromBaselineMB": null
+        }
+      }
+    },
+    {
+      "elapsedMs": 15003,
+      "stats": {
+        "latency": {
+          "sampleCount": 10,
+          "skippedCount": 0,
+          "last": {
+            "frameCaptureMs": 12,
+            "preprocessMs": 83,
+            "generationMs": 8607,
+            "timeToFirstTokenMs": 7557,
+            "totalMs": 8705,
+            "timestamp": 1780948683985
+          },
+          "avgTotalMs": 7387.900000000003,
+          "avgTimeToFirstTokenMs": 6188.799999999998,
+          "minTotalMs": 6235,
+          "maxTotalMs": 8705
+        },
+        "sampling": {
+          "loopRateHz": 0.2,
+          "inferenceRateHz": 0.2,
+          "skipRateHz": 0,
+          "avgLoopPeriodMs": 6763.272727272727,
+          "configuredCaptureDelayMs": 50,
+          "totalLoopTicks": 3,
+          "totalCompleted": 3,
+          "totalSkipped": 0,
+          "skipRatio": 0,
+          "theoreticalMaxInferenceHz": 0.13535646124067727
+        },
+        "memory": {
+          "current": {
+            "supported": false,
+            "usedMB": null,
+            "totalMB": null,
+            "limitMB": null,
+            "timestamp": 1780948684237
+          },
+          "peakUsedMB": null,
+          "baselineUsedMB": null,
+          "deltaFromBaselineMB": null
+        }
+      }
+    },
+    {
+      "elapsedMs": 20003,
+      "stats": {
+        "latency": {
+          "sampleCount": 10,
+          "skippedCount": 0,
+          "last": {
+            "frameCaptureMs": 12,
+            "preprocessMs": 83,
+            "generationMs": 8607,
+            "timeToFirstTokenMs": 7557,
+            "totalMs": 8705,
+            "timestamp": 1780948683985
+          },
+          "avgTotalMs": 7387.900000000003,
+          "avgTimeToFirstTokenMs": 6188.799999999998,
+          "minTotalMs": 6235,
+          "maxTotalMs": 8705
+        },
+        "sampling": {
+          "loopRateHz": 0.1,
+          "inferenceRateHz": 0.1,
+          "skipRateHz": 0,
+          "avgLoopPeriodMs": 6763.272727272727,
+          "configuredCaptureDelayMs": 50,
+          "totalLoopTicks": 3,
+          "totalCompleted": 3,
+          "totalSkipped": 0,
+          "skipRatio": 0,
+          "theoreticalMaxInferenceHz": 0.13535646124067727
+        },
+        "memory": {
+          "current": {
+            "supported": false,
+            "usedMB": null,
+            "totalMB": null,
+            "limitMB": null,
+            "timestamp": 1780948688246
+          },
+          "peakUsedMB": null,
+          "baselineUsedMB": null,
+          "deltaFromBaselineMB": null
+        }
+      }
+    },
+    {
+      "elapsedMs": 25004,
+      "stats": {
+        "latency": {
+          "sampleCount": 11,
+          "skippedCount": 0,
+          "last": {
+            "frameCaptureMs": 13,
+            "preprocessMs": 92,
+            "generationMs": 9176,
+            "timeToFirstTokenMs": 8286,
+            "totalMs": 9282,
+            "timestamp": 1780948693318
+          },
+          "avgTotalMs": 7560.090909090912,
+          "avgTimeToFirstTokenMs": 6379.454545454544,
+          "minTotalMs": 6235,
+          "maxTotalMs": 9282
+        },
+        "sampling": {
+          "loopRateHz": 0.1,
+          "inferenceRateHz": 0.1,
+          "skipRateHz": 0,
+          "avgLoopPeriodMs": 6977.333333333333,
+          "configuredCaptureDelayMs": 50,
+          "totalLoopTicks": 3,
+          "totalCompleted": 3,
+          "totalSkipped": 0,
+          "skipRatio": 0,
+          "theoreticalMaxInferenceHz": 0.13227354168420288
+        },
+        "memory": {
+          "current": {
+            "supported": false,
+            "usedMB": null,
+            "totalMB": null,
+            "limitMB": null,
+            "timestamp": 1780948694257
+          },
+          "peakUsedMB": null,
+          "baselineUsedMB": null,
+          "deltaFromBaselineMB": null
+        }
+      }
+    },
+    {
+      "elapsedMs": 30004,
+      "stats": {
+        "latency": {
+          "sampleCount": 11,
+          "skippedCount": 0,
+          "last": {
+            "frameCaptureMs": 13,
+            "preprocessMs": 92,
+            "generationMs": 9176,
+            "timeToFirstTokenMs": 8286,
+            "totalMs": 9282,
+            "timestamp": 1780948693318
+          },
+          "avgTotalMs": 7560.090909090912,
+          "avgTimeToFirstTokenMs": 6379.454545454544,
+          "minTotalMs": 6235,
+          "maxTotalMs": 9282
+        },
+        "sampling": {
+          "loopRateHz": 0.1,
+          "inferenceRateHz": 0.1,
+          "skipRateHz": 0,
+          "avgLoopPeriodMs": 6977.333333333333,
+          "configuredCaptureDelayMs": 50,
+          "totalLoopTicks": 3,
+          "totalCompleted": 3,
+          "totalSkipped": 0,
+          "skipRatio": 0,
+          "theoreticalMaxInferenceHz": 0.13227354168420288
+        },
+        "memory": {
+          "current": {
+            "supported": false,
+            "usedMB": null,
+            "totalMB": null,
+            "limitMB": null,
+            "timestamp": 1780948698266
+          },
+          "peakUsedMB": null,
+          "baselineUsedMB": null,
+          "deltaFromBaselineMB": null
+        }
+      }
+    },
+    {
+      "elapsedMs": 35007,
+      "stats": {
+        "latency": {
+          "sampleCount": 12,
+          "skippedCount": 0,
+          "last": {
+            "frameCaptureMs": 13,
+            "preprocessMs": 91,
+            "generationMs": 9672,
+            "timeToFirstTokenMs": 9045,
+            "totalMs": 9776,
+            "timestamp": 1780948703144
+          },
+          "avgTotalMs": 7744.750000000003,
+          "avgTimeToFirstTokenMs": 6601.583333333332,
+          "minTotalMs": 6235,
+          "maxTotalMs": 9776
+        },
+        "sampling": {
+          "loopRateHz": 0.1,
+          "inferenceRateHz": 0.1,
+          "skipRateHz": 0,
+          "avgLoopPeriodMs": 7196.538461538462,
+          "configuredCaptureDelayMs": 50,
+          "totalLoopTicks": 3,
+          "totalCompleted": 3,
+          "totalSkipped": 0,
+          "skipRatio": 0,
+          "theoreticalMaxInferenceHz": 0.12911972626618026
+        },
+        "memory": {
+          "current": {
+            "supported": false,
+            "usedMB": null,
+            "totalMB": null,
+            "limitMB": null,
+            "timestamp": 1780948704370
+          },
+          "peakUsedMB": null,
+          "baselineUsedMB": null,
+          "deltaFromBaselineMB": null
+        }
+      }
+    },
+    {
+      "elapsedMs": 40011,
+      "stats": {
+        "latency": {
+          "sampleCount": 12,
+          "skippedCount": 0,
+          "last": {
+            "frameCaptureMs": 13,
+            "preprocessMs": 91,
+            "generationMs": 9672,
+            "timeToFirstTokenMs": 9045,
+            "totalMs": 9776,
+            "timestamp": 1780948703144
+          },
+          "avgTotalMs": 7744.750000000003,
+          "avgTimeToFirstTokenMs": 6601.583333333332,
+          "minTotalMs": 6235,
+          "maxTotalMs": 9776
+        },
+        "sampling": {
+          "loopRateHz": 0.1,
+          "inferenceRateHz": 0.1,
+          "skipRateHz": 0,
+          "avgLoopPeriodMs": 7196.538461538462,
+          "configuredCaptureDelayMs": 50,
+          "totalLoopTicks": 3,
+          "totalCompleted": 3,
+          "totalSkipped": 0,
+          "skipRatio": 0,
+          "theoreticalMaxInferenceHz": 0.12911972626618026
+        },
+        "memory": {
+          "current": {
+            "supported": false,
+            "usedMB": null,
+            "totalMB": null,
+            "limitMB": null,
+            "timestamp": 1780948708378
+          },
+          "peakUsedMB": null,
+          "baselineUsedMB": null,
+          "deltaFromBaselineMB": null
+        }
+      }
+    },
+    {
+      "elapsedMs": 45014,
+      "stats": {
+        "latency": {
+          "sampleCount": 13,
+          "skippedCount": 0,
+          "last": {
+            "frameCaptureMs": 10.000000000014552,
+            "preprocessMs": 90,
+            "generationMs": 9689,
+            "timeToFirstTokenMs": 8616,
+            "totalMs": 9794,
+            "timestamp": 1780948712990
+          },
+          "avgTotalMs": 7902.384615384618,
+          "avgTimeToFirstTokenMs": 6756.53846153846,
+          "minTotalMs": 6235,
+          "maxTotalMs": 9794
+        },
+        "sampling": {
+          "loopRateHz": 0.1,
+          "inferenceRateHz": 0.1,
+          "skipRateHz": 0,
+          "avgLoopPeriodMs": 7385.785714285715,
+          "configuredCaptureDelayMs": 50,
+          "totalLoopTicks": 3,
+          "totalCompleted": 3,
+          "totalSkipped": 0,
+          "skipRatio": 0,
+          "theoreticalMaxInferenceHz": 0.12654408114395846
+        },
+        "memory": {
+          "current": {
+            "supported": false,
+            "usedMB": null,
+            "totalMB": null,
+            "limitMB": null,
+            "timestamp": 1780948714390
+          },
+          "peakUsedMB": null,
+          "baselineUsedMB": null,
+          "deltaFromBaselineMB": null
+        }
+      }
+    },
+    {
+      "elapsedMs": 50019,
+      "stats": {
+        "latency": {
+          "sampleCount": 13,
+          "skippedCount": 0,
+          "last": {
+            "frameCaptureMs": 10.000000000014552,
+            "preprocessMs": 90,
+            "generationMs": 9689,
+            "timeToFirstTokenMs": 8616,
+            "totalMs": 9794,
+            "timestamp": 1780948712990
+          },
+          "avgTotalMs": 7902.384615384618,
+          "avgTimeToFirstTokenMs": 6756.53846153846,
+          "minTotalMs": 6235,
+          "maxTotalMs": 9794
+        },
+        "sampling": {
+          "loopRateHz": 0.1,
+          "inferenceRateHz": 0.1,
+          "skipRateHz": 0,
+          "avgLoopPeriodMs": 7385.785714285715,
+          "configuredCaptureDelayMs": 50,
+          "totalLoopTicks": 3,
+          "totalCompleted": 3,
+          "totalSkipped": 0,
+          "skipRatio": 0,
+          "theoreticalMaxInferenceHz": 0.12654408114395846
+        },
+        "memory": {
+          "current": {
+            "supported": false,
+            "usedMB": null,
+            "totalMB": null,
+            "limitMB": null,
+            "timestamp": 1780948718397
+          },
+          "peakUsedMB": null,
+          "baselineUsedMB": null,
+          "deltaFromBaselineMB": null
+        }
+      }
+    },
+    {
+      "elapsedMs": 55023,
+      "stats": {
+        "latency": {
+          "sampleCount": 14,
+          "skippedCount": 0,
+          "last": {
+            "frameCaptureMs": 14,
+            "preprocessMs": 86,
+            "generationMs": 9571.999999999985,
+            "timeToFirstTokenMs": 8764,
+            "totalMs": 9672.999999999985,
+            "timestamp": 1780948722714
+          },
+          "avgTotalMs": 8028.857142857144,
+          "avgTimeToFirstTokenMs": 6899.928571428571,
+          "minTotalMs": 6235,
+          "maxTotalMs": 9794
+        },
+        "sampling": {
+          "loopRateHz": 0.1,
+          "inferenceRateHz": 0.1,
+          "skipRateHz": 0,
+          "avgLoopPeriodMs": 7541.666666666667,
+          "configuredCaptureDelayMs": 50,
+          "totalLoopTicks": 3,
+          "totalCompleted": 3,
+          "totalSkipped": 0,
+          "skipRatio": 0,
+          "theoreticalMaxInferenceHz": 0.12455072773210916
+        },
+        "memory": {
+          "current": {
+            "supported": false,
+            "usedMB": null,
+            "totalMB": null,
+            "limitMB": null,
+            "timestamp": 1780948724410
+          },
+          "peakUsedMB": null,
+          "baselineUsedMB": null,
+          "deltaFromBaselineMB": null
+        }
+      }
+    },
+    {
+      "elapsedMs": 60026,
+      "stats": {
+        "latency": {
+          "sampleCount": 14,
+          "skippedCount": 0,
+          "last": {
+            "frameCaptureMs": 14,
+            "preprocessMs": 86,
+            "generationMs": 9571.999999999985,
+            "timeToFirstTokenMs": 8764,
+            "totalMs": 9672.999999999985,
+            "timestamp": 1780948722714
+          },
+          "avgTotalMs": 8028.857142857144,
+          "avgTimeToFirstTokenMs": 6899.928571428571,
+          "minTotalMs": 6235,
+          "maxTotalMs": 9794
+        },
+        "sampling": {
+          "loopRateHz": 0.1,
+          "inferenceRateHz": 0.1,
+          "skipRateHz": 0,
+          "avgLoopPeriodMs": 7541.666666666667,
+          "configuredCaptureDelayMs": 50,
+          "totalLoopTicks": 3,
+          "totalCompleted": 3,
+          "totalSkipped": 0,
+          "skipRatio": 0,
+          "theoreticalMaxInferenceHz": 0.12455072773210916
+        },
+        "memory": {
+          "current": {
+            "supported": false,
+            "usedMB": null,
+            "totalMB": null,
+            "limitMB": null,
+            "timestamp": 1780948728418
+          },
+          "peakUsedMB": null,
+          "baselineUsedMB": null,
+          "deltaFromBaselineMB": null
+        }
+      }
+    },
+    {
+      "elapsedMs": 65031,
+      "stats": {
+        "latency": {
+          "sampleCount": 15,
+          "skippedCount": 0,
+          "last": {
+            "frameCaptureMs": 13.000000000014552,
+            "preprocessMs": 92.99999999998545,
+            "generationMs": 10627,
+            "timeToFirstTokenMs": 8996,
+            "totalMs": 10734.00000000003,
+            "timestamp": 1780948733499
+          },
+          "avgTotalMs": 8209.200000000003,
+          "avgTimeToFirstTokenMs": 7039.666666666666,
+          "minTotalMs": 6235,
+          "maxTotalMs": 10734.00000000003
+        },
+        "sampling": {
+          "loopRateHz": 0.1,
+          "inferenceRateHz": 0.1,
+          "skipRateHz": 0,
+          "avgLoopPeriodMs": 7744.375,
+          "configuredCaptureDelayMs": 50,
+          "totalLoopTicks": 2,
+          "totalCompleted": 2,
+          "totalSkipped": 0,
+          "skipRatio": 0,
+          "theoreticalMaxInferenceHz": 0.1218145495297958
+        },
+        "memory": {
+          "current": {
+            "supported": false,
+            "usedMB": null,
+            "totalMB": null,
+            "limitMB": null,
+            "timestamp": 1780948734430
+          },
+          "peakUsedMB": null,
+          "baselineUsedMB": null,
+          "deltaFromBaselineMB": null
+        }
+      }
+    },
+    {
+      "elapsedMs": 70034.00000000003,
+      "stats": {
+        "latency": {
+          "sampleCount": 15,
+          "skippedCount": 0,
+          "last": {
+            "frameCaptureMs": 13.000000000014552,
+            "preprocessMs": 92.99999999998545,
+            "generationMs": 10627,
+            "timeToFirstTokenMs": 8996,
+            "totalMs": 10734.00000000003,
+            "timestamp": 1780948733499
+          },
+          "avgTotalMs": 8209.200000000003,
+          "avgTimeToFirstTokenMs": 7039.666666666666,
+          "minTotalMs": 6235,
+          "maxTotalMs": 10734.00000000003
+        },
+        "sampling": {
+          "loopRateHz": 0.1,
+          "inferenceRateHz": 0.1,
+          "skipRateHz": 0,
+          "avgLoopPeriodMs": 7744.375,
+          "configuredCaptureDelayMs": 50,
+          "totalLoopTicks": 2,
+          "totalCompleted": 2,
+          "totalSkipped": 0,
+          "skipRatio": 0,
+          "theoreticalMaxInferenceHz": 0.1218145495297958
+        },
+        "memory": {
+          "current": {
+            "supported": false,
+            "usedMB": null,
+            "totalMB": null,
+            "limitMB": null,
+            "timestamp": 1780948738438
+          },
+          "peakUsedMB": null,
+          "baselineUsedMB": null,
+          "deltaFromBaselineMB": null
+        }
+      }
+    },
+    {
+      "elapsedMs": 75038,
+      "stats": {
+        "latency": {
+          "sampleCount": 16,
+          "skippedCount": 0,
+          "last": {
+            "frameCaptureMs": 14,
+            "preprocessMs": 105,
+            "generationMs": 8834,
+            "timeToFirstTokenMs": 7882,
+            "totalMs": 8954,
+            "timestamp": 1780948742504
+          },
+          "avgTotalMs": 8255.750000000004,
+          "avgTimeToFirstTokenMs": 7092.312499999999,
+          "minTotalMs": 6235,
+          "maxTotalMs": 10734.00000000003
+        },
+        "sampling": {
+          "loopRateHz": 0.1,
+          "inferenceRateHz": 0.1,
+          "skipRateHz": 0,
+          "avgLoopPeriodMs": 7818.529411764706,
+          "configuredCaptureDelayMs": 50,
+          "totalLoopTicks": 3,
+          "totalCompleted": 3,
+          "totalSkipped": 0,
+          "skipRatio": 0,
+          "theoreticalMaxInferenceHz": 0.12112769887654054
+        },
+        "memory": {
+          "current": {
+            "supported": false,
+            "usedMB": null,
+            "totalMB": null,
+            "limitMB": null,
+            "timestamp": 1780948744454
+          },
+          "peakUsedMB": null,
+          "baselineUsedMB": null,
+          "deltaFromBaselineMB": null
+        }
+      }
+    }
+  ],
+  "latencySamples": [
+    {
+      "frameCaptureMs": 15,
+      "preprocessMs": 95,
+      "generationMs": 7762,
+      "timeToFirstTokenMs": 6635,
+      "totalMs": 7873,
+      "timestamp": 1780948675228
+    },
+    {
+      "frameCaptureMs": 12,
+      "preprocessMs": 83,
+      "generationMs": 8607,
+      "timeToFirstTokenMs": 7557,
+      "totalMs": 8705,
+      "timestamp": 1780948683985
+    },
+    {
+      "frameCaptureMs": 13,
+      "preprocessMs": 92,
+      "generationMs": 9176,
+      "timeToFirstTokenMs": 8286,
+      "totalMs": 9282,
+      "timestamp": 1780948693318
+    },
+    {
+      "frameCaptureMs": 13,
+      "preprocessMs": 91,
+      "generationMs": 9672,
+      "timeToFirstTokenMs": 9045,
+      "totalMs": 9776,
+      "timestamp": 1780948703144
+    },
+    {
+      "frameCaptureMs": 10.000000000014552,
+      "preprocessMs": 90,
+      "generationMs": 9689,
+      "timeToFirstTokenMs": 8616,
+      "totalMs": 9794,
+      "timestamp": 1780948712990
+    },
+    {
+      "frameCaptureMs": 14,
+      "preprocessMs": 86,
+      "generationMs": 9571.999999999985,
+      "timeToFirstTokenMs": 8764,
+      "totalMs": 9672.999999999985,
+      "timestamp": 1780948722714
+    },
+    {
+      "frameCaptureMs": 13.000000000014552,
+      "preprocessMs": 92.99999999998545,
+      "generationMs": 10627,
+      "timeToFirstTokenMs": 8996,
+      "totalMs": 10734.00000000003,
+      "timestamp": 1780948733499
+    },
+    {
+      "frameCaptureMs": 14,
+      "preprocessMs": 105,
+      "generationMs": 8834,
+      "timeToFirstTokenMs": 7882,
+      "totalMs": 8954,
+      "timestamp": 1780948742504
+    }
+  ],
+  "summary": {
+    "latency": {
+      "sampleCount": 8,
+      "skippedCount": 0,
+      "avgTotalMs": 9348.875000000002,
+      "avgTimeToFirstTokenMs": 8222.625,
+      "minTotalMs": 7873,
+      "maxTotalMs": 10734.00000000003,
+      "p50TotalMs": 9282,
+      "p95TotalMs": 10734.00000000003,
+      "avgPreprocessMs": 91.87499999999818,
+      "avgGenerationMs": 9242.374999999998
+    },
+    "sampling": {
+      "inferenceRateHz": 0.1,
+      "sessionInferenceRateHz": 0.039979210810378606,
+      "loopRateHz": 0.1,
+      "skipRateHz": 0,
+      "skipRatio": 0,
+      "totalCompleted": 3,
+      "totalSkipped": 0,
+      "avgLoopPeriodMs": 9400,
+      "theoreticalMaxInferenceHz": 0.10696474174700163
+    },
+    "memory": {
+      "peakUsedMB": null,
+      "avgUsedMB": null,
+      "endUsedMB": null,
+      "baselineUsedMB": null,
+      "deltaFromBaselineMB": null,
+      "limitMB": null,
+      "memoryApiSupported": false
+    }
+  }
+}

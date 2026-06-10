@@ -38,7 +38,9 @@ export const TIMING = {
 
 export const BENCHMARK = {
   /** Default recording length for cross-browser video benchmarks. */
-  DEFAULT_DURATION_SEC: 60,
+  DEFAULT_DURATION_SEC: 71,
+  MIN_DURATION_SEC: 15,
+  MAX_DURATION_SEC: 300,
   SNAPSHOT_INTERVAL_MS: 5_000,
 } as const;
 

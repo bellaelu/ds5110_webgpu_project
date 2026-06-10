@@ -1,7 +1,7 @@
-import { useEffect } from "react";
+import { useCallback, useEffect, useState } from "react";
 import GlassContainer from "./GlassContainer";
 import GlassButton from "./GlassButton";
-import { GLASS_EFFECTS } from "../constants";
+import { BENCHMARK, GLASS_EFFECTS } from "../constants";
 import type { BenchmarkRecorderStatus } from "../hooks/useBenchmarkRecorder";
 import type { BrowserInfo } from "../types/benchmark";
 import type { BenchmarkSession } from "../types/benchmark";
@@ -32,6 +32,14 @@ function formatElapsed(ms: number): string {
   return m > 0 ? `${m}:${s.toString().padStart(2, "0")}` : `${s}s`;
 }
 
+function clampDurationSec(raw: string): number {
+  const parsed = parseInt(raw.trim(), 10);
+  if (!Number.isFinite(parsed)) {
+    return BENCHMARK.DEFAULT_DURATION_SEC;
+  }
+  return Math.max(BENCHMARK.MIN_DURATION_SEC, Math.min(BENCHMARK.MAX_DURATION_SEC, parsed));
+}
+
 export default function BenchmarkPanel({
   status,
   elapsedMs,
@@ -48,11 +56,30 @@ export default function BenchmarkPanel({
   onExport,
   onOpenCompare,
 }: BenchmarkPanelProps) {
+  const [durationInput, setDurationInput] = useState(String(durationSec));
+
   useEffect(() => {
     if (browserInfo) {
       console.info("[FastVLM benchmark] Browser:", browserInfo);
     }
   }, [browserInfo]);
+
+  useEffect(() => {
+    setDurationInput(String(durationSec));
+  }, [durationSec]);
+
+  const commitDurationInput = useCallback(() => {
+    const clamped = clampDurationSec(durationInput);
+    onDurationSecChange(clamped);
+    setDurationInput(String(clamped));
+  }, [durationInput, onDurationSecChange]);
+
+  const handleStart = useCallback(() => {
+    const clamped = clampDurationSec(durationInput);
+    onDurationSecChange(clamped);
+    setDurationInput(String(clamped));
+    onStart();
+  }, [durationInput, onDurationSecChange, onStart]);
 
   const progress = durationSec > 0 ? Math.min(100, (elapsedMs / (durationSec * 1000)) * 100) : 0;
 
@@ -102,13 +129,20 @@ export default function BenchmarkPanel({
         </label>
 
         <label className="block text-[11px] opacity-70">
-          Duration (seconds)
+          Duration (seconds, {BENCHMARK.MIN_DURATION_SEC}–{BENCHMARK.MAX_DURATION_SEC})
           <input
-            type="number"
-            min={15}
-            max={300}
-            value={durationSec}
-            onChange={(e) => onDurationSecChange(Math.max(15, Math.min(300, Number(e.target.value) || 60)))}
+            type="text"
+            inputMode="numeric"
+            pattern="[0-9]*"
+            value={durationInput}
+            onChange={(e) => setDurationInput(e.target.value.replace(/[^\d]/g, ""))}
+            onBlur={commitDurationInput}
+            onKeyDown={(e) => {
+              if (e.key === "Enter") {
+                commitDurationInput();
+                (e.target as HTMLInputElement).blur();
+              }
+            }}
             disabled={status === "recording"}
             className="mt-1 w-full rounded-lg bg-black/30 border border-white/10 px-2 py-1.5 text-xs text-white disabled:opacity-50"
           />
@@ -131,7 +165,7 @@ export default function BenchmarkPanel({
 
         <div className="flex flex-wrap gap-2">
           {status === "idle" && (
-            <GlassButton onClick={onStart} className="px-3 py-2 rounded-xl text-xs font-semibold">
+            <GlassButton onClick={handleStart} className="px-3 py-2 rounded-xl text-xs font-semibold">
               Start {durationSec}s benchmark
             </GlassButton>
           )}
